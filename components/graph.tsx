@@ -1,18 +1,19 @@
 'use client';
 
 import React from 'react';
-import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LineChart, Line } from 'recharts';
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LineChart, Line, ComposedChart } from 'recharts';
 
 export const MarketChart = ({ data }: { data: any[] }) => (
   <ResponsiveContainer width="100%" height={400}>
-    <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+    <ComposedChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="year" />
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="value" fill="#3B82F6" name="Marché Global (Mds €)" />
-    </BarChart>
+      <Bar dataKey="value" barSize={80} fill="#3B82F6" />
+      <Line type="monotone" dataKey="value" stroke="#ff7300" />
+    </ComposedChart>
   </ResponsiveContainer>
 );
 

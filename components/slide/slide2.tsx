@@ -14,15 +14,6 @@ const TechnicalSlides = () => {
     
     <div className="">
 
-    <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4  h-full w-full">
-          <h2 className="text-6xl font-bold text-blue-800">L'histoire des Lunettes</h2>          
-          <div>
-            <Image src={hist} alt="Julien" className="rounded-full" />
-          </div>
-          </div>
-      </Card>
-
       {/* Slide 4 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4  h-full w-full">
@@ -72,6 +63,14 @@ const TechnicalSlides = () => {
             </div>
           </div>
         </div>
+      </Card>
+      <Card className="p-6 bg-white shadow-lg">
+        <div className="space-y-4  h-full w-full">
+          <h2 className="text-6xl font-bold text-blue-800">L'histoire des Lunettes</h2>          
+          <div>
+            <Image src={hist} alt="Julien" className="rounded-full" />
+          </div>
+          </div>
       </Card>
 
       {/* Slide 5 */}
