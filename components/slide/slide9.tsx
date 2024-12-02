@@ -32,7 +32,7 @@ const Slide9 = () => {
             
             <div className="p-6 bg-purple-50 rounded-lg text-center transform hover:scale-105 transition-transform">
               <h4 className="font-semibold text-3xl text-purple-800">Response Time</h4>
-              <p className="text-7xl font-bold text-purple-600 my-4">0.5s</p>
+              <p className="text-7xl font-bold text-purple-600 my-4">0.15s</p>
               <p className="text-xl text-purple-700">average response time</p>
             </div>
             
