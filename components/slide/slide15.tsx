@@ -11,7 +11,7 @@ import logo from '@/public/logo.jpg';
 
 const Slide15 = () => {
   return (
-    <div className="">
+    <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 flex flex-col h-full w-full">
           <h2 className="text-6xl font-bold text-blue-800">Social Impact</h2>

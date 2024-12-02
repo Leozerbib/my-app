@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const Slide7 = () => {
   return (
-    <div className="">
+    <div className="h-full w-full">
       {/* Slide 7 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full w-full">

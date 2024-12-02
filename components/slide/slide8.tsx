@@ -5,7 +5,7 @@ import { Heart, Brain } from 'lucide-react';
 
 const Slide8 = () => {
   return (
-    <div className="">
+    <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full w-full">
           <h2 className="text-6xl font-bold text-blue-800">Technical Specifications</h2>

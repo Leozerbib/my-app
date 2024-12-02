@@ -1,3 +1,4 @@
+import PresentationContainer from "@/components/presentation-container";
 import Slide1 from "@/components/slide/slide1";
 import PresentationSlides from "@/components/slide/slide1";
 import Slide10 from "@/components/slide/slide10";
@@ -16,26 +17,11 @@ import Slide7 from "@/components/slide/slide7";
 import Slide8 from "@/components/slide/slide8";
 import Slide9 from "@/components/slide/slide9";
 
+
 export default function Home() {
   return (
-    <>
-      <Slide1 />
-      <Slide2 />
-      <Slide3 />
-      <Slide4 />
-      <Slide5 />
-      <Slide6 />
-      <Slide7 />
-      <Slide8 />
-      <Slide9 />
-      <Slide10 />
-      <Slide11 />
-      <Slide12 />
-      <Slide13 />
-      <Slide14 />
-      <Slide15 />
-      <Slide16 />    
-    </>
-    
+    <main className="relative flex h-full w-full justify-center items-center overflow-hidden">
+      <PresentationContainer />
+    </main>
   );
 }

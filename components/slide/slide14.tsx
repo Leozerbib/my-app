@@ -5,7 +5,7 @@ import { Clock, Users, Brain, Check, LightbulbIcon, AlertTriangle, Hourglass } f
 
 const Slide14 = () => {
   return (
-    <div className="">
+    <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
         <div className="h-full w-full flex flex-col relative space-y-4">
           <h2 className="text-6xl font-bold text-blue-800">Risk Analysis</h2>

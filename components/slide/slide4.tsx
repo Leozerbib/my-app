@@ -8,7 +8,7 @@ import c from '@/public/img1.jpg';
 
 const Slide4 = () => {
   return (
-    <div className="s">
+    <div className="h-full w-full">
        <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full">
           <h2 className="text-6xl font-bold text-blue-800">From Classic to Connected</h2>

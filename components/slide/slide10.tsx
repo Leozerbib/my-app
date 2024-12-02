@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card';
 
 const Slide10 = () => {
   return (
-    <div className="">
+    <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full w-full">
           <h2 className="text-6xl font-bold text-blue-800">Opportunity Analysis</h2>

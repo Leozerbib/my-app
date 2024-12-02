@@ -16,7 +16,7 @@ const Slide12 = () => {
         { year: '2028', revenue: 17.48, costs: 13.87, profit: 3.61 }
       ];
   return (
-    <div className="">
+    <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full">
           <h2 className="text-6xl font-bold text-blue-800">Business Model</h2>

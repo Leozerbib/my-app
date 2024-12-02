@@ -16,7 +16,7 @@ const Slide11 = () => {
       ];
 
   return (
-    <div className="">
+    <div className="h-full w-full">
       <Card className="relative overflow-hidden rounded-xl p-6 bg-gradient-to-br from-white to-gray-50 shadow-xl hover:shadow-2xl transition-all duration-300">
         <div className="space-y-4 h-full w-full">
           <h2 className="text-6xl font-bold text-blue-800">Key Figures</h2>
