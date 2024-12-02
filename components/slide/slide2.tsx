@@ -1,18 +1,36 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Brain, Eye, Heart, Thermometer, Activity, BatteryCharging } from 'lucide-react';
+import hist from '@/public/hist.jpg';
+import a from '@/public/img3.jpg';
+import b from '@/public/img2.jpg';
+import c from '@/public/img1.jpg';
+
+import Image from 'next/image';
 
 const TechnicalSlides = () => {
   return (
+
+    
     <div className="">
+
+    <Card className="p-6 bg-white shadow-lg">
+        <div className="space-y-4  h-full w-full">
+          <h2 className="text-6xl font-bold text-blue-800">L'histoire des Lunettes</h2>          
+          <div>
+            <Image src={hist} alt="Julien" className="rounded-full" />
+          </div>
+          </div>
+      </Card>
+
       {/* Slide 4 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4  h-full w-full">
           <h2 className="text-6xl font-bold text-blue-800">L'évolution des Lunettes Intelligentes</h2>
           <h3 className="text-4xl font-semibold text-blue-600">"Motivation Technologique"</h3>
           
-          <div className="flex flex-wrap gap-4 h-[80%] text-2xl">
-            <div className="p-4 w-full bg-blue-50 rounded-lg">
+          <div className="flex flex-wrap h-[80%] text-2xl">
+            <div className="p-4 w-1/2 bg-blue-50 rounded-lg">
               <h4 className="font-semibold flex items-center gap-2">
                 <Brain className="w-5 h-5" />
                 Avancées Technologiques
@@ -23,8 +41,11 @@ const TechnicalSlides = () => {
                 <li>IoT et Connectivité Avancée</li>
               </ul>
             </div>
+            <div className='w-1/2 h-1/3 p-2'>
+                <Image src={a} alt="Julien" className="h-full object-contain rounded-md" />
+            </div>
 
-            <div className="p-4 w-full bg-green-50 rounded-lg">
+            <div className="p-4 w-1/2 bg-green-50 rounded-lg">
               <h4 className="font-semibold">Soutien Politique</h4>
               <ul className="list-disc ml-4 space-y-2">
                 <li>Plans nationaux senior-tech</li>
@@ -33,13 +54,21 @@ const TechnicalSlides = () => {
               </ul>
             </div>
 
-            <div className="p-4 w-full bg-purple-50 rounded-lg">
+            <div className='w-1/2 h-1/3 p-2'>
+                <Image src={b} alt="Julien" className='h-full object-contain rounded-md' />
+            </div>
+
+            <div className="p-4 w-1/2 bg-purple-50 rounded-lg">
               <h4 className="font-semibold">Croissance du Secteur</h4>
               <ul className="list-disc ml-4 space-y-2">
                 <li>Marché en expansion rapide</li>
                 <li>Demande croissante</li>
                 <li>Innovations continues</li>
               </ul>
+            </div>
+
+            <div className='w-1/2 h-1/3 p-2'>
+                <Image src={c} alt="Julien" className="h-full w-full object-contain rounded-md" />
             </div>
           </div>
         </div>

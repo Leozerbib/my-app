@@ -7,7 +7,7 @@ const PresentationSlides = () => {
       {/* Slide 10 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full w-full">
-          <h2 className="text-6xl font-bold text-blue-800">Slide 10: Plan de Développement</h2>
+          <h2 className="text-6xl font-bold text-blue-800">Plan de Développement</h2>
           <h3 className="text-4xl font-semibold text-blue-600">"Feuille de Route vers le Lancement"</h3>
           
           <div className="w-full flex pt-8 flex-col h-full gap-4">
@@ -44,7 +44,7 @@ const PresentationSlides = () => {
       {/* Slide 11 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="h-full w-full flex flex-col relative space-y-4">
-          <h2 className="text-6xl font-bold text-blue-800">Slide 11: Analyse des Risques</h2>
+          <h2 className="text-6xl font-bold text-blue-800">Analyse des Risques</h2>
           <h3 className="text-4xl font-semibold text-blue-600">"Anticipation et Mitigation des Défis"</h3>
           
           <div className="flex h-full w-full gap-4 align-middle">
