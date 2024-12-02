@@ -81,7 +81,7 @@ const TechnicalSlides = () => {
 
           <div className="flex w-full flex-grow h-[80%] gap-6 text-2xl">
             <div className="space-y-4 h-full w-1/2 flex flex-col">
-              <div className="p-4 bg-red-50 h-1/2 rounded-lg">
+              <div className="p-4 bg-red-50 h-1/2 rounded-lg flex flex-col justify-center">
                 <h4 className="font-semibold">Problématiques Actuelles</h4>
                 <ul className="list-disc ml-4">
                   <li>Perte d'autonomie</li>
@@ -91,7 +91,7 @@ const TechnicalSlides = () => {
                 </ul>
               </div>
 
-              <div className="p-4 bg-green-50 h-1/2 rounded-lg">
+              <div className="p-4 bg-green-50 h-1/2 rounded-lg flex flex-col justify-center">
                 <h4 className="font-semibold">Bénéfices Fonctionnels</h4>
                 <ul className="list-disc ml-4">
                   <li>Surveillance en temps réel</li>
@@ -102,7 +102,7 @@ const TechnicalSlides = () => {
               </div>
             </div>
 
-            <div className="p-4 h-full w-1/2 bg-blue-50 rounded-lg">
+            <div className="p-4 h-full w-1/2 bg-blue-50 rounded-lg flex flex-col justify-center">
               <h4 className="font-semibold">Impact Environnemental</h4>
               <div className="space-y-4 mt-4">
                 <div className="flex items-start gap-3">
