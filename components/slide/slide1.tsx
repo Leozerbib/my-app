@@ -1,71 +1,58 @@
 import React from 'react';
+import Image from 'next/image';
 import { Card } from '@/components/ui/card';
+import { Clock, Users, Brain, Check, LightbulbIcon, AlertTriangle, Hourglass } from 'lucide-react';
+import ju  from '@/public/julien.jpg';
+import ma  from '@/public/matteo.jpg';
+import li  from '@/public/lilian.jpg';
+import le  from '@/public/leo.jpg';
+import re  from '@/public/remi.jpg';
+import logo from '@/public/logo.jpg';
 
-const PresentationSlides = () => {
+const Slide1 = () => {
   return (
     <div className="">
-      {/* Slide 10 */}
+      {/* Slide 1 */}
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full w-full">
-          <h2 className="text-6xl font-bold text-blue-800">Plan de Développement</h2>
-          <h3 className="text-4xl font-semibold text-blue-600">"Feuille de Route vers le Lancement"</h3>
+        <div className="space-y-4 h-full">
+          <h1 className="text-6xl font-bold text-center text-blue-800">SmartVision Care Glasses</h1>
+          <p className="text-4xl text-center text-blue-600">At the service of your vision and your future</p>
           
-          <div className="w-full flex pt-8 flex-col h-full gap-4">
-            <div className="border-l-4 border-blue-500 pl-4">
-              <h4 className="font-semibold">Année 1</h4>
-              <ul className="text-2xl list-disc ml-4 space-y-2">
-                <li>R&D initiale et développement des prototypes</li>
-                <li>Tests des capteurs biométriques</li>
-                <li>Certification médicale CE/FDA</li>
-              </ul>
+          <div className="h-[80%] w-full gap-10 flex items-center justify-center mt-8">
+            <div className="text-center">
+              <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
+                <Image src={ju} alt="Julien" className="rounded-full" />
+              </div>
+              <h3 className="font-semibold">Julien Tournier</h3>
+              <p className="text-lg">Technical Manager</p>
             </div>
-            
-            <div className="border-l-4 border-green-500 pl-4">
-              <h4 className="font-semibold">Année 2</h4>
-              <ul className="text-2xl list-disc ml-4 space-y-2">
-                <li>Production des premiers lots</li>
-                <li>Lancement des campagnes marketing</li>
-                <li>Déploiement dans les premiers hôpitaux partenaires</li>
-              </ul>
+            <div className="text-center">
+              <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
+              <Image src={ma} alt="Julien" className="rounded-full" />
+              </div>
+              <h3 className="font-semibold">Matteo Cruz</h3>
+              <p className="text-lg">Marketing Manager</p>
             </div>
-            
-            <div className="border-l-4 border-purple-500 pl-4">
-              <h4 className="font-semibold">Année 3-5</h4>
-              <ul className="text-2xl list-disc ml-4 space-y-2">
-                <li>Expansion internationale</li>
-                <li>Développement de nouvelles fonctionnalités</li>
-                <li>Optimisation des coûts de production</li>
-              </ul>
+            <div className="text-center">
+              <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
+              <Image src={li} alt="Julien" className="rounded-full" />
+              </div>
+              <h3 className="font-semibold">Lilian Mayet</h3>
+              <p className="text-lg">Financial Manager</p>
             </div>
-          </div>
-        </div>
-      </Card>
-
-      {/* Slide 11 */}
-      <Card className="p-6 bg-white shadow-lg">
-        <div className="h-full w-full flex flex-col relative space-y-4">
-          <h2 className="text-6xl font-bold text-blue-800">Analyse des Risques</h2>
-          <h3 className="text-4xl font-semibold text-blue-600">"Anticipation et Mitigation des Défis"</h3>
-          
-          <div className="flex h-full w-full gap-4 align-middle">
-            <div className="p-4 bg-red-50 rounded-lg w-full flex flex-col align-middle h-full justify-center">
-              <h4 className="font-semibold text-4xl text-red-800">Risques Majeurs</h4>
-              <ul className="text-2xl list-disc ml-4 space-y-2">
-                <li>Adoption lente par les seniors</li>
-                <li>Investissements initiaux élevés</li>
-                <li>Concurrence accrue</li>
-                <li>Conformité réglementaire</li>
-              </ul>
+            <div className="text-center">
+              <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
+              <Image src={le} alt="Julien" className="rounded-full" />
+              </div>
+              <h3 className="font-semibold">Léo Zerbib</h3>
+              <p className="text-lg">Product Manager</p>
             </div>
-            
-            <div className="p-4 bg-green-50 rounded-lg w-full flex flex-col align-middle h-full justify-center">
-              <h4 className="text-4xl font-semibold text-green-800">Solutions</h4>
-              <ul className="text-2xl list-disc ml-4 space-y-2">
-                <li>Campagnes locales ciblées</li>
-                <li>Diversification des sources de financement</li>
-                <li>Focus sur la qualité et le support client</li>
-                <li>Collaboration avec des experts en réglementation</li>
-              </ul>
+            <div className="text-center">
+              <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
+              <Image src={re} alt="Julien" className="rounded-full" />
+              </div>
+              <h3 className="font-semibold">Rémi Godet</h3>
+              <p className="text-lg">Project Manager</p>
             </div>
           </div>
         </div>
@@ -74,4 +61,4 @@ const PresentationSlides = () => {
   );
 };
 
-export default PresentationSlides;
+export default Slide1;
