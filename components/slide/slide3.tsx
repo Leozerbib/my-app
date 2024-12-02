@@ -31,38 +31,42 @@ const BusinessSlides = () => {
   ];
 
   return (
-    <div className="space-y-8">
-      {/* Slide 7 */}
+    <div className="">
+      
       <Card className="relative overflow-hidden rounded-xl p-6 bg-gradient-to-br from-white to-gray-50 shadow-xl hover:shadow-2xl transition-all duration-300">
         <div className="space-y-4 h-full w-full">
-          <h2 className="text-6xl font-bold text-blue-800">Les Chiffres Clés</h2>
-          <h3 className="text-4xl font-semibold text-blue-600">"En Quelques Chiffres"</h3>
+          <h2 className="text-6xl font-bold text-blue-800">Chiffres d'Utilisation</h2>
+          <h3 className="text-4xl font-semibold text-blue-600">"SmartVision en Action"</h3>
           
-          <div className="w-full h-[50%]">
-          <MarketChart data={marketData} />
-          </div>
-
-          <div className="grid grid-cols-3 gap-4 mt-4">
-            <div className="p-4 bg-blue-50 rounded-lg">
-              <h4 className="font-semibold text-4xl">Coût Unitaire</h4>
-              <p className="text-6xl font-bold text-blue-600">150€</p>
-              <p className="text-2xl">Prix de vente: 275€</p>
+          <div className="grid grid-cols-2 gap-8 mt-8">
+            <div className="p-6 bg-blue-50 rounded-lg text-center transform hover:scale-105 transition-transform">
+              <h4 className="font-semibold text-3xl text-blue-800">Autonomie</h4>
+              <p className="text-7xl font-bold text-blue-600 my-4">12h</p>
+              <p className="text-xl text-blue-700">d'utilisation continue</p>
             </div>
-            <div className="p-4 bg-green-50 rounded-lg">
-              <h4 className="font-semibold text-4xl">Abonnement</h4>
-              <p className="text-6xl font-bold text-green-600">12€</p>
-              <p className="text-2xl">par mois</p>
+            
+            <div className="p-6 bg-green-50 rounded-lg text-center transform hover:scale-105 transition-transform">
+              <h4 className="font-semibold text-3xl text-green-800">Fiabilité</h4>
+              <p className="text-7xl font-bold text-green-600 my-4">99%</p>
+              <p className="text-xl text-green-700">de précision des capteurs</p>
             </div>
-            <div className="p-4 bg-purple-50 rounded-lg">
-              <h4 className="font-semibold text-4xl">Objectif Ventes</h4>
-              <p className="text-6xl font-bold text-purple-600">30 000</p>
-              <p className="text-2xl">unités en An 1</p>
+            
+            <div className="p-6 bg-purple-50 rounded-lg text-center transform hover:scale-105 transition-transform">
+              <h4 className="font-semibold text-3xl text-purple-800">Réactivité</h4>
+              <p className="text-7xl font-bold text-purple-600 my-4">0.5s</p>
+              <p className="text-xl text-purple-700">temps de réponse moyen</p>
+            </div>
+            
+            <div className="p-6 bg-orange-50 rounded-lg text-center transform hover:scale-105 transition-transform">
+              <h4 className="font-semibold text-3xl text-orange-800">Portée</h4>
+              <p className="text-7xl font-bold text-orange-600 my-4">100m</p>
+              <p className="text-xl text-orange-700">de connexion stable</p>
             </div>
           </div>
         </div>
       </Card>
 
-      {/* Slide 8 */}
+      {/* Slide 7 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full w-full">
           <h2 className="text-6xl font-bold text-blue-800">Analyse des Opportunités</h2>
@@ -105,6 +109,35 @@ const BusinessSlides = () => {
         </div>
       </Card>
 
+      {/* Slide 8 */}
+      <Card className="relative overflow-hidden rounded-xl p-6 bg-gradient-to-br from-white to-gray-50 shadow-xl hover:shadow-2xl transition-all duration-300">
+        <div className="space-y-4 h-full w-full">
+          <h2 className="text-6xl font-bold text-blue-800">Les Chiffres Clés</h2>
+          <h3 className="text-4xl font-semibold text-blue-600">"En Quelques Chiffres"</h3>
+          
+          <div className="w-full h-[50%]">
+          <MarketChart data={marketData} />
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 mt-4">
+            <div className="p-4 bg-blue-50 rounded-lg">
+              <h4 className="font-semibold text-4xl">Coût Unitaire</h4>
+              <p className="text-6xl font-bold text-blue-600">150€</p>
+              <p className="text-2xl">Prix de vente: 275€</p>
+            </div>
+            <div className="p-4 bg-green-50 rounded-lg">
+              <h4 className="font-semibold text-4xl">Abonnement</h4>
+              <p className="text-6xl font-bold text-green-600">12€</p>
+              <p className="text-2xl">par mois</p>
+            </div>
+            <div className="p-4 bg-purple-50 rounded-lg">
+              <h4 className="font-semibold text-4xl">Objectif Ventes</h4>
+              <p className="text-6xl font-bold text-purple-600">30 000</p>
+              <p className="text-2xl">unités en An 1</p>
+            </div>
+          </div>
+        </div>
+      </Card>
       {/* Slide 9 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full">

@@ -3,7 +3,7 @@ import { Card } from '@/components/ui/card';
 
 const PresentationSlides = () => {
   return (
-    <div className="space-y-8">
+    <div className="">
       {/* Slide 10 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full w-full">

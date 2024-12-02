@@ -4,7 +4,7 @@ import { Check, Heart, Hospital, Euro, Users, Leaf } from 'lucide-react';
 
 const ConclusionSlides = () => {
   return (
-    <div className="space-y-8">
+    <div className="s">
       {/* Slide 12 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 flex flex-col h-full w-full">

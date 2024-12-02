@@ -11,7 +11,7 @@ import logo from '@/public/logo.jpg';
 
 const OpeningSlides = () => {
   return (
-    <div className="space-y-8">
+    <div className="">
       {/* Slide 1 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full">
