@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
-import { Clock, Users, Brain, Check } from 'lucide-react';
+import { Clock, Users, Brain, Check, LightbulbIcon, AlertTriangle, Hourglass } from 'lucide-react';
 import ju  from '@/public/julien.jpg';
 import ma  from '@/public/matteo.jpg';
 import li  from '@/public/lilian.jpg';
@@ -57,6 +57,53 @@ const OpeningSlides = () => {
           </div>
         </div>
       </Card>
+
+      <Card className="p-6 bg-white shadow-lg">
+      <div className="space-y-4 h-full">
+        <h2 className="text-6xl font-bold text-blue-800">La Problématique</h2>
+        
+        <div className="grid grid-cols-3 gap-6 mt-8">
+          {/* État Actuel */}
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
+            <div className="flex items-center justify-center mb-4">
+              <Hourglass className="w-16 h-16 text-gray-600" />
+            </div>
+            <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center">État Actuel</h3>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Le vieillissement de la population mondiale s'accélère. D'ici 2050, près de 22% de la population aura plus de 60 ans, créant des défis sans précédent pour nos systèmes de santé.
+            </p>
+          </div>
+
+          {/* Problématique */}
+          <div className="bg-red-50 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
+            <div className="flex items-center justify-center mb-4">
+              <AlertTriangle className="w-16 h-16 text-red-600" />
+            </div>
+            <h3 className="text-3xl font-semibold text-red-800 mb-4 text-center">Enjeux</h3>
+            <p className="text-xl text-red-700 leading-relaxed">
+              Comment les avancées technologiques peuvent-elles répondre aux besoins de santé et de sécurité des seniors tout en allégeant la pression sur les systèmes de santé ?
+            </p>
+          </div>
+
+          {/* Notre Solution */}
+          <div className="bg-green-50 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
+            <div className="flex items-center justify-center mb-4">
+              <LightbulbIcon className="w-16 h-16 text-green-600" />
+            </div>
+            <h3 className="text-3xl font-semibold text-green-800 mb-4 text-center">Notre Solution</h3>
+            <p className="text-xl text-green-700 leading-relaxed">
+              Les SmartVision Care Glasses combinent capteurs biométriques, intelligence artificielle et réalité augmentée pour améliorer l'autonomie des seniors et assurer un suivi proactif en temps réel.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+          <p className="text-2xl text-blue-800 text-center italic">
+            "Notre mission est de transformer les défis du vieillissement en opportunités d'innovation pour une société plus inclusive."
+          </p>
+        </div>
+      </div>
+    </Card>
 
       {/* Slide 2 */}
       <Card className="p-6 bg-white shadow-lg">
