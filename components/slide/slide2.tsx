@@ -4,15 +4,15 @@ import { Brain, Eye, Heart, Thermometer, Activity, BatteryCharging } from 'lucid
 
 const TechnicalSlides = () => {
   return (
-    <div className="space-y-8">
+    <div className="">
       {/* Slide 4 */}
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-blue-800">L'évolution des Lunettes Intelligentes</h2>
-          <h3 className="text-xl font-semibold text-blue-600">"Motivation Technologique"</h3>
+        <div className="space-y-4  h-full w-full">
+          <h2 className="text-6xl font-bold text-blue-800">L'évolution des Lunettes Intelligentes</h2>
+          <h3 className="text-4xl font-semibold text-blue-600">"Motivation Technologique"</h3>
           
-          <div className="grid grid-cols-3 gap-4">
-            <div className="p-4 bg-blue-50 rounded-lg">
+          <div className="flex flex-wrap gap-4 h-[80%] text-2xl">
+            <div className="p-4 w-full bg-blue-50 rounded-lg">
               <h4 className="font-semibold flex items-center gap-2">
                 <Brain className="w-5 h-5" />
                 Avancées Technologiques
@@ -24,7 +24,7 @@ const TechnicalSlides = () => {
               </ul>
             </div>
 
-            <div className="p-4 bg-green-50 rounded-lg">
+            <div className="p-4 w-full bg-green-50 rounded-lg">
               <h4 className="font-semibold">Soutien Politique</h4>
               <ul className="list-disc ml-4 space-y-2">
                 <li>Plans nationaux senior-tech</li>
@@ -33,7 +33,7 @@ const TechnicalSlides = () => {
               </ul>
             </div>
 
-            <div className="p-4 bg-purple-50 rounded-lg">
+            <div className="p-4 w-full bg-purple-50 rounded-lg">
               <h4 className="font-semibold">Croissance du Secteur</h4>
               <ul className="list-disc ml-4 space-y-2">
                 <li>Marché en expansion rapide</li>
@@ -47,13 +47,13 @@ const TechnicalSlides = () => {
 
       {/* Slide 5 */}
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-blue-800">Réponse aux Besoins</h2>
-          <h3 className="text-xl font-semibold text-blue-600">"Solutions SmartVision"</h3>
+        <div className="space-y-4 h-full w-full">
+          <h2 className="text-6xl font-bold text-blue-800">Réponse aux Besoins</h2>
+          <h3 className="text-4xl font-semibold text-blue-600">"Solutions SmartVision"</h3>
 
-          <div className="grid grid-cols-2 gap-6">
-            <div className="space-y-4">
-              <div className="p-4 bg-red-50 rounded-lg">
+          <div className="flex w-full flex-grow h-[80%] gap-6 text-2xl">
+            <div className="space-y-4 h-full w-1/2 flex flex-col">
+              <div className="p-4 bg-red-50 h-1/2 rounded-lg">
                 <h4 className="font-semibold">Problématiques Actuelles</h4>
                 <ul className="list-disc ml-4">
                   <li>Perte d'autonomie</li>
@@ -63,7 +63,7 @@ const TechnicalSlides = () => {
                 </ul>
               </div>
 
-              <div className="p-4 bg-green-50 rounded-lg">
+              <div className="p-4 bg-green-50 h-1/2 rounded-lg">
                 <h4 className="font-semibold">Bénéfices Fonctionnels</h4>
                 <ul className="list-disc ml-4">
                   <li>Surveillance en temps réel</li>
@@ -74,7 +74,7 @@ const TechnicalSlides = () => {
               </div>
             </div>
 
-            <div className="p-4 bg-blue-50 rounded-lg h-full">
+            <div className="p-4 h-full w-1/2 bg-blue-50 rounded-lg">
               <h4 className="font-semibold">Impact Environnemental</h4>
               <div className="space-y-4 mt-4">
                 <div className="flex items-start gap-3">
@@ -99,12 +99,12 @@ const TechnicalSlides = () => {
 
       {/* Slide 6 */}
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-blue-800">Caractéristiques Techniques</h2>
-          <h3 className="text-xl font-semibold text-blue-600">"Fonctionnement SmartVision"</h3>
+        <div className="space-y-4 h-full w-full">
+          <h2 className="text-6xl font-bold text-blue-800">Caractéristiques Techniques</h2>
+          <h3 className="text-4xl font-semibold text-blue-600">"Fonctionnement SmartVision"</h3>
 
-          <div className="grid grid-cols-3 gap-4">
-            <div className="p-4 bg-blue-50 rounded-lg">
+          <div className="flex w-full h-[40%] flex-grow gap-4 items-center text-2xl">
+            <div className="bg-blue-50 w-1/3 rounded-lg p-6">
               <h4 className="font-semibold flex items-center gap-2">
                 <Heart className="w-5 h-5 text-red-500" />
                 Capteurs Biométriques
@@ -117,7 +117,7 @@ const TechnicalSlides = () => {
               </ul>
             </div>
 
-            <div className="p-4 bg-purple-50 rounded-lg">
+            <div className="p-6 bg-purple-50 w-1/3 rounded-lg">
               <h4 className="font-semibold flex items-center gap-2">
                 <Brain className="w-5 h-5 text-purple-500" />
                 IA et RA
@@ -130,7 +130,7 @@ const TechnicalSlides = () => {
               </ul>
             </div>
 
-            <div className="p-4 bg-green-50 rounded-lg">
+            <div className="p-6 bg-green-50 w-1/3 rounded-lg">
               <h4 className="font-semibold flex items-center gap-2">
                 <Heart className="w-5 h-5 text-green-500" />
                 Application Mobile
@@ -144,7 +144,7 @@ const TechnicalSlides = () => {
             </div>
           </div>
 
-          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+          <div className="mt-6 p-8 bg-gray-50 rounded-lg text-2xl">
             <h4 className="font-semibold">Intégration Système</h4>
             <p className="mt-2">
               Toutes les fonctionnalités sont interconnectées via une plateforme cloud sécurisée, 

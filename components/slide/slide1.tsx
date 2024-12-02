@@ -6,12 +6,12 @@ const PresentationSlides = () => {
     <div className="space-y-8">
       {/* Slide 10 */}
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4">
+        <div className="space-y-4 h-full w-full">
           <h2 className="text-6xl font-bold text-blue-800">Slide 10: Plan de Développement</h2>
           <h3 className="text-4xl font-semibold text-blue-600">"Feuille de Route vers le Lancement"</h3>
           
-          <div className="w-full flex justify-end flex-col h-full gap-4">
-            <div className="border-l-4 h-full border-blue-500 pl-4">
+          <div className="w-full flex pt-8 flex-col h-full gap-4">
+            <div className="border-l-4 border-blue-500 pl-4">
               <h4 className="font-semibold">Année 1</h4>
               <ul className="text-2xl list-disc ml-4 space-y-2">
                 <li>R&D initiale et développement des prototypes</li>
@@ -48,7 +48,7 @@ const PresentationSlides = () => {
           <h3 className="text-4xl font-semibold text-blue-600">"Anticipation et Mitigation des Défis"</h3>
           
           <div className="flex h-full w-full gap-4 align-middle">
-            <div className="p-4 bg-red-50 rounded-lg w-full">
+            <div className="p-4 bg-red-50 rounded-lg w-full flex flex-col align-middle h-full justify-center">
               <h4 className="font-semibold text-4xl text-red-800">Risques Majeurs</h4>
               <ul className="text-2xl list-disc ml-4 space-y-2">
                 <li>Adoption lente par les seniors</li>
@@ -58,7 +58,7 @@ const PresentationSlides = () => {
               </ul>
             </div>
             
-            <div className="p-4 bg-green-50 rounded-lg w-full">
+            <div className="p-4 bg-green-50 rounded-lg w-full flex flex-col align-middle h-full justify-center">
               <h4 className="text-4xl font-semibold text-green-800">Solutions</h4>
               <ul className="text-2xl list-disc ml-4 space-y-2">
                 <li>Campagnes locales ciblées</li>
