@@ -3,8 +3,6 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import dynamic from 'next/dynamic';
-import { ChartConfig, ChartContainer } from '../ui/chart';
-import { Bar, BarChart } from 'recharts';
 
 const MarketChart = dynamic(() => import('../graph').then(mod => mod.MarketChart), {
     ssr: false,
@@ -32,17 +30,6 @@ const BusinessSlides = () => {
     { year: '2028', revenue: 17.48, costs: 13.87, profit: 3.61 }
   ];
 
-  const chartConfig = {
-    desktop: {
-      label: "Desktop",
-      color: "#2563eb",
-    },
-    mobile: {
-      label: "Mobile",
-      color: "#60a5fa",
-    },
-  } satisfies ChartConfig
-
   return (
     <div className="space-y-8">
       {/* Slide 7 */}
@@ -52,11 +39,7 @@ const BusinessSlides = () => {
           <h3 className="text-4xl font-semibold text-blue-600">"En Quelques Chiffres"</h3>
           
           <div className="w-full h-[50%]">
-          <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
-            <BarChart accessibilityLayer data={marketData}>
-                <Bar dataKey="marketData" fill="var(--chart-1)" radius={4} />
-            </BarChart>
-            </ChartContainer>
+          <MarketChart data={marketData} />
           </div>
 
           <div className="grid grid-cols-3 gap-4 mt-4">
