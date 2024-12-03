@@ -27,7 +27,7 @@ const Slide12 = () => {
           </div>
 
           <div className="grid grid-cols-2 text-2xl gap-4 mt-4">
-            <div className="p-4 bg-blue-50 rounded-lg">
+            <div className="p-4 bg-blue-50 hover:bg-blue-100 rounded-lg">
               <h4 className="font-semibold">Revenue Sources</h4>
               <ul className="list-disc ml-4">
                 <li>Glasses sales: €275/unit</li>
@@ -35,7 +35,7 @@ const Slide12 = () => {
                 <li>Healthcare facility services</li>
               </ul>
             </div>
-            <div className="p-4 bg-green-50 rounded-lg">
+            <div className="p-4 bg-green-50 hover:bg-green-100 rounded-lg">
               <h4 className="font-semibold">Initial Funding</h4>
               <ul className="list-disc ml-4">
                 <li>Private investors: €5M</li>

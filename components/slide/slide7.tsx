@@ -18,7 +18,7 @@ const Slide7 = () => {
 
           <div className="flex w-full flex-grow h-[80%] gap-6 text-2xl">
             <div className="space-y-4 h-full w-1/2 flex flex-col">
-              <div className="p-4 bg-red-50 h-1/2 rounded-lg flex flex-col justify-center">
+              <div className="p-4 bg-red-50 hover:bg-red-100 h-1/2 rounded-lg flex flex-col justify-center">
                 <h4 className="font-semibold">Current Challenges</h4>
                 <ul className="list-disc ml-4">
                   <li>Loss of autonomy</li>
@@ -28,7 +28,7 @@ const Slide7 = () => {
                 </ul>
               </div>
 
-              <div className="p-4 bg-green-50 h-1/2 rounded-lg flex flex-col justify-center">
+              <div className="p-4 bg-green-50 hover:bg-green-100 h-1/2 rounded-lg flex flex-col justify-center">
                 <h4 className="font-semibold">Functional Benefits</h4>
                 <ul className="list-disc ml-4">
                   <li>Real-time monitoring</li>
@@ -39,7 +39,7 @@ const Slide7 = () => {
               </div>
             </div>
 
-            <div className="p-4 h-full w-1/2 bg-blue-50 rounded-lg flex flex-col justify-center">
+            <div className="p-4 h-full w-1/2 bg-blue-50 hover:bg-blue-100 rounded-lg flex flex-col justify-center">
               <h4 className="font-semibold">Environmental Impact</h4>
               <div className="space-y-4 mt-4">
                 <div className="flex items-start gap-3">

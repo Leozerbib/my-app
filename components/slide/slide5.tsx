@@ -15,8 +15,8 @@ const Slide5 = () => {
           <h2 className="text-6xl font-bold text-blue-800">The Evolution of Smart Glasses</h2>
           <h3 className="text-4xl font-semibold text-blue-600">"Technological Motivation"</h3>
           
-          <div className="flex flex-wrap h-[80%] text-2xl">
-            <div className="p-4 w-1/2 bg-blue-50 rounded-lg">
+          <div className="flex flex-wrap h-[80%] text-2xl ">
+            <div className="p-4 w-1/2 bg-blue-50 rounded-lg hover:bg-blue-100">
               <h4 className="font-semibold flex items-center gap-2">
                 <Brain className="w-5 h-5" />
                 Technological Advances
@@ -31,7 +31,7 @@ const Slide5 = () => {
                 <Image src={a} alt="Tech Image 1" className="h-full object-contain rounded-md" />
             </div>
 
-            <div className="p-4 w-1/2 bg-green-50 rounded-lg">
+            <div className="p-4 w-1/2 bg-green-50  hover:bg-green-100 rounded-lg">
               <h4 className="font-semibold">Political Support</h4>
               <ul className="list-disc ml-4 space-y-2">
                 <li>National senior-tech plans</li>
@@ -44,7 +44,7 @@ const Slide5 = () => {
                 <Image src={b} alt="Tech Image 2" className='h-full object-contain rounded-md' />
             </div>
 
-            <div className="p-4 w-1/2 bg-purple-50 rounded-lg">
+            <div className="p-4 w-1/2  hover:bg-purple-100 bg-purple-50 rounded-lg">
               <h4 className="font-semibold">Sector Growth</h4>
               <ul className="list-disc ml-4 space-y-2">
                 <li>Rapidly expanding market</li>

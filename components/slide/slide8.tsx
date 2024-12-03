@@ -12,7 +12,7 @@ const Slide8 = () => {
           <h3 className="text-4xl font-semibold text-blue-600">"SmartVision Operation"</h3>
 
           <div className="flex w-full h-[40%] flex-grow gap-4 items-center text-2xl">
-            <div className="bg-blue-50 w-1/3 rounded-lg p-6">
+            <div className="bg-blue-50 hover:bg-blue-100 w-1/3 rounded-lg p-6">
               <h4 className="font-semibold flex items-center gap-2">
                 <Heart className="w-5 h-5 text-red-500" />
                 Biometric Sensors
@@ -25,7 +25,7 @@ const Slide8 = () => {
               </ul>
             </div>
 
-            <div className="p-6 bg-purple-50 w-1/3 rounded-lg">
+            <div className="p-6 bg-purple-50 hover:bg-purple-100 w-1/3 rounded-lg">
               <h4 className="font-semibold flex items-center gap-2">
                 <Brain className="w-5 h-5 text-purple-500" />
                 AI and AR
@@ -38,7 +38,7 @@ const Slide8 = () => {
               </ul>
             </div>
 
-            <div className="p-6 bg-green-50 w-1/3 rounded-lg">
+            <div className="p-6 bg-green-50 hover:bg-green-100 w-1/3 rounded-lg">
               <h4 className="font-semibold flex items-center gap-2">
                 <Heart className="w-5 h-5 text-green-500" />
                 Mobile Application

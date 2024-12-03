@@ -14,25 +14,25 @@ const Slide4 = () => {
           <h2 className="text-6xl font-bold text-blue-800">From Classic to Connected</h2>
           
           <div className="grid grid-cols-2 gap-8 h-[60%] text-2xl">
-            <div className="p-4 bg-gray-50 rounded-lg flex h-full justify-center flex-col">
+            <div className="p-4 bg-purple-50 hover:bg-purple-100 rounded-lg flex h-full justify-center flex-col">
               <h3 className="font-semibold text-4xl mb-4">Classic Solutions</h3>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-gray-600" />
+                  <Check className="w-12 h-12 text-purple-600" />
                   <span>Canes and walkers</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-gray-600" />
+                  <Check className="w-12 h-12 text-purple-600" />
                   <span>Simple alert buttons</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-gray-600" />
+                  <Check className="w-12 h-12 text-purple-600" />
                   <span>Basic corrective glasses</span>
                 </li>
               </ul>
             </div>
             
-            <div className="p-4 bg-blue-50 rounded-lg flex h-full justify-center flex-col">
+            <div className="p-4 bg-blue-50 hover:bg-blue-100 rounded-lg flex h-full justify-center flex-col">
               <h3 className="font-semibold text-4xl mb-4">Smart Solutions</h3>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
@@ -51,7 +51,7 @@ const Slide4 = () => {
             </div>
           </div>
 
-          <div className="mt-6 p-4 h-[25%] bg-yellow-50">
+          <div className="mt-6 p-4 h-[25%]  hover:bg-green-100 bg-green-50">
             <h3 className="font-semibold text-4xl mb-2">Advantages of Smart Solutions</h3>
             <ul className="h-[80%] gap-4 flex justify-around items-center rounded-lg">
               <li className="flex items-start gap-2">

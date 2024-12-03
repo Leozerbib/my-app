@@ -27,17 +27,17 @@ const Slide11 = () => {
           </div>
 
           <div className="grid grid-cols-3 gap-4 mt-4">
-            <div className="p-4 bg-blue-50 rounded-lg">
+            <div className="p-4 bg-blue-50 hover:bg-blue-100 rounded-lg">
               <h4 className="font-semibold text-4xl">Unit Cost</h4>
               <p className="text-6xl font-bold text-blue-600">€150</p>
               <p className="text-2xl">Sale price: €275</p>
             </div>
-            <div className="p-4 bg-green-50 rounded-lg">
+            <div className="p-4 bg-green-50 hover:bg-green-100 rounded-lg">
               <h4 className="font-semibold text-4xl">Subscription</h4>
               <p className="text-6xl font-bold text-green-600">€12</p>
               <p className="text-2xl">per month</p>
             </div>
-            <div className="p-4 bg-purple-50 rounded-lg">
+            <div className="p-4 bg-purple-50 hover:bg-purple-100 rounded-lg">
               <h4 className="font-semibold text-4xl">Sales Target</h4>
               <p className="text-6xl font-bold text-purple-600">30,000</p>
               <p className="text-2xl">units in Year 1</p>

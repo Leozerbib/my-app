@@ -10,7 +10,7 @@ const Slide3 = () => {
       {/* Slide 3 */}
       <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full w-full">
-          <h2 className="text-6xl font-bold text-blue-800">Why Smart Glasses?</h2>
+          <h2 className="text-6xl font-bold text-blue-800">Why Smart Vision?</h2>
           <div className='h-[80%] w-full flex'>
             <div className="h-full w-1/2">
                 <div className="absolute w-1 bg-blue-200 h-[80%] left-4"></div>
@@ -19,7 +19,7 @@ const Slide3 = () => {
                     <div className="absolute w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
                     <Clock className="w-12 h-12 text-white" />
                     </div>
-                    <div className='flex-col flex text-3xl pt-8 justify-center w-full h-full'>
+                    <div className='flex-col flex text-3xl pt-16 justify-center w-full h-full'>
                     <h3 className="font-semibold">1950-1980</h3>
                     <p>First electronic hearing aids</p>
                     <p>Beginning of technological assistance for seniors</p>
@@ -30,7 +30,7 @@ const Slide3 = () => {
                     <div className="absolute w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
                     <Users className="w-12 h-12 text-white" />
                     </div>
-                    <div className='flex-col flex text-3xl pt-8 justify-center w-full h-full'>
+                    <div className='flex-col flex text-3xl pt-16 justify-center w-full h-full'>
                     <h3 className="font-semibold">1980-2010</h3>
                     <p>Emergence of remote monitoring devices</p>
                     <p>Development of alert systems</p>
@@ -41,7 +41,7 @@ const Slide3 = () => {
                     <div className="absolute w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
                     <Brain className="w-12 h-12 text-white" />
                     </div>
-                    <div className='flex-col flex text-3xl pt-8 justify-center w-full h-full'>
+                    <div className='flex-col flex text-3xl pt-16 justify-center w-full h-full'>
                     <h3 className="font-semibold">2010-2023</h3>
                     <p>Connected objects revolution</p>
                     <p>Artificial intelligence and augmented reality</p>

@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative h-screen border-none block overflow-none">
-      <body className={`relative h-full border-none flex overflow-none ${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={` cursor-crosshair	relative h-full border-none flex overflow-none ${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>

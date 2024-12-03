@@ -10,7 +10,7 @@ const Slide10 = () => {
           <h3 className="text-4xl font-semibold text-blue-600">"Market Entry Strategy"</h3>
 
           <div className="flex h-[80%] w-full flex-wrap text-2xl">
-            <div className="p-4 bg-blue-50 w-1/2 rounded-lg">
+            <div className="p-4 bg-blue-100 w-1/2 rounded-lg">
               <h4 className="font-semibold text-blue-800">Strengths</h4>
               <ul className="list-disc ml-4">
                 <li>Comprehensive vital sign monitoring</li>
@@ -18,7 +18,7 @@ const Slide10 = () => {
                 <li>Hospital system integration</li>
               </ul>
             </div>
-            <div className="p-4 bg-red-50 w-1/2 rounded-lg">
+            <div className="p-4 bg-red-100 w-1/2 rounded-lg">
               <h4 className="font-semibold text-red-800">Weaknesses</h4>
               <ul className="list-disc ml-4">
                 <li>High initial costs</li>
@@ -26,7 +26,7 @@ const Slide10 = () => {
                 <li>New brand in the market</li>
               </ul>
             </div>
-            <div className="p-4 bg-green-50 w-1/2 rounded-lg">
+            <div className="p-4 bg-green-100 w-1/2 rounded-lg">
               <h4 className="font-semibold text-green-800">Opportunities</h4>
               <ul className="list-disc ml-4">
                 <li>Rapidly growing market</li>
@@ -34,7 +34,7 @@ const Slide10 = () => {
                 <li>Demand for connected solutions</li>
               </ul>
             </div>
-            <div className="p-4 bg-yellow-50 w-1/2 rounded-lg">
+            <div className="p-4 bg-yellow-100 w-1/2 rounded-lg">
               <h4 className="font-semibold text-yellow-800">Threats</h4>
               <ul className="list-disc ml-4">
                 <li>Competition from tech giants</li>

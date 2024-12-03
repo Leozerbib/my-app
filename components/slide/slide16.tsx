@@ -18,17 +18,17 @@ const Slide16 = () => {
           <h3 className="text-4xl font-semibold text-blue-600">"Transforming Senior Care"</h3>
 
           <div className="flex w-full h-[50%] justify-around items-center text-2xl gap-4">
-            <div className="p-4 bg-blue-50 h-1/2 w-1/4 rounded-lg">
+            <div className="p-4 hover:bg-blue-100 bg-blue-50 h-1/2 w-1/4 rounded-lg">
               <h4 className="font-semibold text-blue-800">The Challenge</h4>
               <p className="mt-2">Demographic aging and growing need for senior autonomy</p>
             </div>
 
-            <div className="p-4 bg-green-50 h-1/2 w-1/4 rounded-lg">
+            <div className="p-4 hover:bg-green-100 bg-green-50 h-1/2 w-1/4 rounded-lg">
               <h4 className="font-semibold text-green-800">Our Solution</h4>
               <p className="mt-2">SmartVision Care Glasses: innovative technology serving well-being</p>
             </div>
 
-            <div className="p-4 bg-purple-50 h-1/2 w-1/4 rounded-lg">
+            <div className="p-4 hover:bg-purple-100 bg-purple-50 h-1/2 w-1/4 rounded-lg">
               <h4 className="font-semibold text-purple-800">The Benefits</h4>
               <p className="mt-2">Enhanced autonomy, increased safety, and optimized care</p>
             </div>

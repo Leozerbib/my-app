@@ -18,6 +18,7 @@ import Slide13 from './slide/slide13';
 import Slide14 from './slide/slide14';
 import Slide15 from './slide/slide15';
 import Slide16 from './slide/slide16';
+import ThankYouSlide from './slide/slide17';
 
 const PresentationContainer = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -43,7 +44,8 @@ const PresentationContainer = () => {
     <Slide13 key="13" />,
     <Slide14 key="14" />,
     <Slide15 key="15" />,
-    <Slide16 key="16" />
+    <Slide16 key="16" />,
+    <ThankYouSlide key="17" />
   ];
 
   const handleNext = () => {

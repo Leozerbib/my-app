@@ -21,35 +21,35 @@ const Slide1 = () => {
           <div className="h-[80%] w-full gap-10 flex items-center justify-center mt-8">
             <div className="text-center">
               <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
-                <Image src={ju} alt="Julien" className="rounded-full" />
+                <Image src={ju} alt="Julien" className="hover:scale-105 rounded-full" />
               </div>
               <h3 className="font-semibold">Julien Tournier</h3>
               <p className="text-lg">Technical Manager</p>
             </div>
             <div className="text-center">
               <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
-              <Image src={ma} alt="Julien" className="rounded-full" />
+              <Image src={ma} alt="Julien" className=" hover:scale-105 rounded-full" />
               </div>
               <h3 className="font-semibold">Matteo Cruz</h3>
               <p className="text-lg">Marketing Manager</p>
             </div>
             <div className="text-center">
               <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
-              <Image src={li} alt="Julien" className="rounded-full" />
+              <Image src={li} alt="Julien" className="hover:scale-105 rounded-full" />
               </div>
               <h3 className="font-semibold">Lilian Mayet</h3>
               <p className="text-lg">Financial Manager</p>
             </div>
             <div className="text-center">
               <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
-              <Image src={le} alt="Julien" className="rounded-full" />
+              <Image src={le} alt="Julien" className="hover:scale-105 rounded-full" />
               </div>
               <h3 className="font-semibold">Léo Zerbib</h3>
               <p className="text-lg">Product Manager</p>
             </div>
             <div className="text-center">
               <div className="w-60 h-60 mx-auto bg-gray-200 rounded-full mb-2">
-              <Image src={re} alt="Julien" className="rounded-full" />
+              <Image src={re} alt="Julien" className="hover:scale-105 rounded-full" />
               </div>
               <h3 className="font-semibold">Rémi Godet</h3>
               <p className="text-lg">Project Manager</p>

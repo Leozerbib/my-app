@@ -19,9 +19,9 @@ const Slide15 = () => {
           
           <div className="flex align-middle h-full w-full gap-6 text-2xl">
             <div className="w-1/2 h-full space-y-4">
-              <div className="h-1/2 w-full flex align-middle justify-center items-center space-x-3">
+              <div className="h-1/2 w-full flex p-16 space-x-3">
                 <Heart className="w-6 h-6 text-red-500 mt-1" />
-                <div>
+                <div className='bg-red-50 hover:bg-red-100 p-3 rounded-lg w-full h-full'>
                   <h4 className="font-semibold">User Benefits</h4>
                   <ul className="list-disc ml-4 space-y-1">
                     <li>Enhanced autonomy</li>
@@ -31,9 +31,9 @@ const Slide15 = () => {
                 </div>
               </div>
 
-              <div className="h-1/2 w-full items-center justify-center flex space-x-3">
+              <div className="h-1/2 w-full p-16 flex space-x-3">
                 <Hospital className="w-6 h-6 text-blue-500 mt-1" />
-                <div>
+                <div className='bg-blue-50 hover:bg-blue-100 p-3 rounded-lg w-full h-full'>
                   <h4 className="font-semibold">Healthcare System Impact</h4>
                   <ul className="list-disc ml-4 space-y-1">
                     <li>Reduced hospitalizations</li>
@@ -45,9 +45,9 @@ const Slide15 = () => {
             </div>
 
             <div className="space-y-4 h-full w-1/2">
-              <div className="h-1/2 w-full justify-center flex items-center space-x-3">
-                <Euro className="w-6 h-6 text-green-500 mt-1" />
-                <div>
+              <div className="h-1/2 w-full p-16 flex space-x-3">
+                <Euro className="w-6 h-6 text-purple-500 mt-1" />
+                <div className='bg-purple-50 hover:bg-purple-100 p-3 rounded-lg w-full h-full'>
                   <h4 className="font-semibold">Economic Impact</h4>
                   <ul className="list-disc ml-4 space-y-1">
                     <li>Reduced healthcare costs</li>
@@ -57,9 +57,9 @@ const Slide15 = () => {
                 </div>
               </div>
 
-              <div className="h-1/2 w-full justify-center flex items-center space-x-3">
+              <div className="h-1/2 w-full p-16 flex space-x-3">
                 <Leaf className="w-6 h-6 text-green-600 mt-1" />
-                <div>
+                <div className='bg-green-50 hover:bg-green-100 p-3 rounded-lg w-full h-full'>
                   <h4 className="font-semibold">Sustainable Development</h4>
                   <ul className="list-disc ml-4 space-y-1">
                     <li>Reduced medical waste</li>

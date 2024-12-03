@@ -19,18 +19,18 @@ const Slide2 = () => {
         
         <div className="grid grid-cols-3 gap-6 mt-8">
           {/* Current State */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
+          <div className="bg-blue-50 hover:bg-blue-100 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
             <div className="flex items-center justify-center mb-4">
-              <Hourglass className="w-16 h-16 text-gray-600" />
+              <Hourglass className="w-16 h-16 text-blue-600" />
             </div>
-            <h3 className="text-3xl font-semibold text-gray-800 mb-4 text-center">Current State</h3>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <h3 className="text-3xl font-semibold text-blue-800 mb-4 text-center">Current State</h3>
+            <p className="text-xl text-blue-600 leading-relaxed">
               Global population aging is accelerating. By 2050, nearly 22% of the population will be over 60, creating unprecedented challenges for our healthcare systems.
             </p>
           </div>
 
           {/* Challenges */}
-          <div className="bg-red-50 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
+          <div className="bg-red-50 hover:bg-red-100 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
             <div className="flex items-center justify-center mb-4">
               <AlertTriangle className="w-16 h-16 text-red-600" />
             </div>
@@ -41,7 +41,7 @@ const Slide2 = () => {
           </div>
 
           {/* Our Solution */}
-          <div className="bg-green-50 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
+          <div className="bg-green-50 hover:bg-green-100 p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
             <div className="flex items-center justify-center mb-4">
               <LightbulbIcon className="w-16 h-16 text-green-600" />
             </div>
