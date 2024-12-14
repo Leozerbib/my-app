@@ -2,7 +2,14 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Heart, HeartPulse, Pill, Eye, Bell } from 'lucide-react';
 
-const CoreFeatureCard = ({ icon: Icon, title, description, color }) => (
+interface CoreFeatureCardProps {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  title: string;
+  description: string;
+  color: string;
+}
+
+const CoreFeatureCard: React.FC<CoreFeatureCardProps> = ({ icon: Icon, title, description, color }) => (
   <div className={`bg-${color}-50 p-6 rounded-lg hover:bg-${color}-100 transition-colors h-full`}>
     <Icon className={`w-12 h-12 text-${color}-600 mb-4`} />
     <h3 className="text-2xl font-semibold mb-2">{title}</h3>

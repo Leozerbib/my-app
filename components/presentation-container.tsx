@@ -2,7 +2,7 @@
 // components/PresentationContainer.tsx
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, ChevronLeft, Download } from 'lucide-react';
-import html2pdf from '../node_modules/html2pdf.js';
+const html2pdf = require('html2pdf.js');
 
 import Slide1 from './slide/slide1';
 import Slide2 from './slide/slide2';
