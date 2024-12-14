@@ -1,64 +1,87 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import dynamic from 'next/dynamic';
-import { Heart, Brain } from 'lucide-react';
+import { Layout, Smartphone, Bell, Glasses } from 'lucide-react';
 
 const Slide8 = () => {
   return (
     <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full w-full">
-          <h2 className="text-6xl font-bold text-blue-800">Technical Specifications</h2>
-          <h3 className="text-4xl font-semibold text-blue-600">"SmartVision Operation"</h3>
-
-          <div className="flex w-full h-[40%] flex-grow gap-4 items-center text-2xl">
-            <div className="bg-blue-50 hover:bg-blue-100 w-1/3 rounded-lg p-6">
-              <h4 className="font-semibold flex items-center gap-2">
-                <Heart className="w-5 h-5 text-red-500" />
-                Biometric Sensors
-              </h4>
-              <ul className="list-disc ml-4">
-                <li>Heart rate</li>
-                <li>Body temperature</li>
-                <li>Oxygen saturation</li>
-                <li>Fall detection</li>
-              </ul>
+        <div className="space-y-6 h-full">
+          <h2 className="text-6xl font-bold text-blue-800">User Interface & Experience</h2>
+          
+          <div className="grid grid-cols-2 gap-8 h-[80%]">
+            {/* Left side - Demo screen */}
+            <div className="bg-gray-900 rounded-lg p-4 relative">
+              {/* AR Interface Demo */}
+              <div className="absolute inset-8 bg-opacity-50 rounded-lg overflow-hidden">
+                {/* AR Elements */}
+                <div className="relative h-full w-full border-2 border-blue-400 rounded-lg">
+                  {/* Heart Rate Monitor */}
+                  <div className="absolute top-4 right-4 bg-blue-500 bg-opacity-20 p-4 rounded-lg">
+                    <div className="text-blue-400 text-lg">Heart Rate</div>
+                    <div className="text-blue-300 text-3xl font-bold">72 BPM</div>
+                  </div>
+                  
+                  {/* Medication Reminder */}
+                  <div className="absolute bottom-4 left-4 bg-green-500 bg-opacity-20 p-4 rounded-lg">
+                    <div className="text-green-400 text-lg">Next Medication</div>
+                    <div className="text-green-300 text-xl">2:00 PM - Aspirin</div>
+                  </div>
+                  
+                  {/* Navigation Arrow */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <svg className="w-24 h-24 text-blue-400" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12 2L4 20l8-3 8 3L12 2z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div className="p-6 bg-purple-50 hover:bg-purple-100 w-1/3 rounded-lg">
-              <h4 className="font-semibold flex items-center gap-2">
-                <Brain className="w-5 h-5 text-purple-500" />
-                AI and AR
-              </h4>
-              <ul className="list-disc ml-4">
-                <li>Predictive analysis</li>
-                <li>Intuitive interface</li>
-                <li>Smart alerts</li>
-                <li>Visual assistance</li>
-              </ul>
+            
+            {/* Right side - Features */}
+            <div className="space-y-6">
+              <div className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
+                <div className="flex items-start gap-4">
+                  <Glasses className="w-12 h-12 text-blue-600" />
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Intuitive AR Display</h3>
+                    <ul className="space-y-2 text-gray-600">
+                      <li>• Non-intrusive visual overlays</li>
+                      <li>• Context-aware information</li>
+                      <li>• Clear visual hierarchy</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
+                <div className="flex items-start gap-4">
+                  <Layout className="w-12 h-12 text-purple-600" />
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Smart Controls</h3>
+                    <ul className="space-y-2 text-gray-600">
+                      <li>• Voice commands</li>
+                      <li>• Gesture recognition</li>
+                      <li>• Touch-sensitive frame</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors">
+                <div className="flex items-start gap-4">
+                  <Smartphone className="w-12 h-12 text-green-600" />
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Mobile Integration</h3>
+                    <ul className="space-y-2 text-gray-600">
+                      <li>• Companion app</li>
+                      <li>• Health dashboard</li>
+                      <li>• Remote monitoring</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div className="p-6 bg-green-50 hover:bg-green-100 w-1/3 rounded-lg">
-              <h4 className="font-semibold flex items-center gap-2">
-                <Heart className="w-5 h-5 text-green-500" />
-                Mobile Application
-              </h4>
-              <ul className="list-disc ml-4">
-                <li>Real-time monitoring</li>
-                <li>Medical history</li>
-                <li>Healthcare communication</li>
-                <li>Alert management</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-6 p-8 bg-gray-50 rounded-lg text-2xl">
-            <h4 className="font-semibold">System Integration</h4>
-            <p className="mt-2">
-              All functionalities are interconnected through a secure cloud platform, 
-              enabling real-time synchronization between the glasses, mobile application, 
-              and hospital systems.
-            </p>
           </div>
         </div>
       </Card>

@@ -72,6 +72,31 @@ body {
   background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1));
 }
 
+.pdf-slide {
+  break-after: page;
+  page-break-after: always;
+  display: block;
+  background-color: white;
+}
+
+@media print {
+  .pdf-slide {
+    break-after: page;
+    page-break-after: always;
+  }
+}
+
+@media print {
+  .slide-content {
+    break-after: page !important;
+    page-break-after: always !important;
+    background-color: white !important;
+  }
+}
+
+.slide-content {
+  background-color: white;
+}
 
 @layer base {
   * {

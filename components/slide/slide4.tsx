@@ -1,72 +1,59 @@
 import React from 'react';
-import Image from 'next/image';
 import { Card } from '@/components/ui/card';
-import { Check, Heart, Hospital, Euro, Users, Leaf, Brain } from 'lucide-react';
-import a from '@/public/img3.jpg';
-import b from '@/public/img2.jpg';
-import c from '@/public/img1.jpg';
+import { Glasses, Brain, Eye, Workflow } from 'lucide-react';
 
 const Slide4 = () => {
   return (
     <div className="h-full w-full">
-       <Card className="p-6 bg-white shadow-lg">
+      <Card className="p-6 bg-white shadow-lg">
         <div className="space-y-4 h-full">
-          <h2 className="text-6xl font-bold text-blue-800">From Classic to Connected</h2>
-          
-          <div className="grid grid-cols-2 gap-8 h-[60%] text-2xl">
-            <div className="p-4 bg-purple-50 hover:bg-purple-100 rounded-lg flex h-full justify-center flex-col">
-              <h3 className="font-semibold text-4xl mb-4">Classic Solutions</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-purple-600" />
-                  <span>Canes and walkers</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-purple-600" />
-                  <span>Simple alert buttons</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-purple-600" />
-                  <span>Basic corrective glasses</span>
-                </li>
-              </ul>
+          <h2 className="text-6xl font-bold text-blue-800">Our Solution</h2>
+          <div className="grid grid-cols-2 gap-8 h-[80%]">
+            {/* Left side: Main product visualization */}
+            <div className="bg-blue-50 rounded-lg p-6 flex flex-col justify-center items-center">
+              {/* Here you should add an SVG or image of the smart glasses */}
+              <div className="w-full h-64 bg-white rounded-lg mb-4 flex items-center justify-center">
+                {/* TODO: Add smart glasses illustration/SVG here */}
+                <Glasses className="w-48 h-48 text-blue-600" />
+              </div>
+              <h3 className="text-3xl font-semibold text-blue-800 mb-2">SmartVision Care Glasses</h3>
+              <p className="text-lg text-center text-gray-600">
+                Next-generation smart glasses designed specifically for senior care and monitoring
+              </p>
             </div>
-            
-            <div className="p-4 bg-blue-50 hover:bg-blue-100 rounded-lg flex h-full justify-center flex-col">
-              <h3 className="font-semibold text-4xl mb-4">Smart Solutions</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-blue-600" />
-                  <span>Integrated biometric sensors</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-blue-600" />
-                  <span>Predictive and preventive AI</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="w-12 h-12 text-blue-600" />
-                  <span>Assistive augmented reality</span>
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          <div className="mt-6 p-4 h-[25%]  hover:bg-green-100 bg-green-50">
-            <h3 className="font-semibold text-4xl mb-2">Advantages of Smart Solutions</h3>
-            <ul className="h-[80%] gap-4 flex justify-around items-center rounded-lg">
-              <li className="flex items-start gap-2">
-                <Check className="w-12 h-12 mb-3 text-green-600" />
-                <span>Continuous and preventive monitoring</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Check className="w-12 h-12 mb-3 text-green-600" />
-                <span>Advanced personalization</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Check className="w-12 h-12 mb-3 text-green-600" />
-                <span>Healthcare ecosystem integration</span>
-              </li>
-            </ul>
+            {/* Right side: Key features */}
+            <div className="space-y-4">
+              <div className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition-colors">
+                <div className="flex items-start gap-4">
+                  <Brain className="w-12 h-12 text-purple-600 mt-1" />
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">AI-Powered Monitoring</h3>
+                    <p className="text-gray-600">Real-time health tracking and predictive analysis for proactive care</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-green-50 rounded-lg p-4 hover:bg-green-100 transition-colors">
+                <div className="flex items-start gap-4">
+                  <Eye className="w-12 h-12 text-green-600 mt-1" />
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Augmented Reality Interface</h3>
+                    <p className="text-gray-600">Intuitive visual assistance and medication reminders</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-orange-50 rounded-lg p-4 hover:bg-orange-100 transition-colors">
+                <div className="flex items-start gap-4">
+                  <Workflow className="w-12 h-12 text-orange-600 mt-1" />
+                  <div>
+                    <h3 className="text-2xl font-semibold mb-2">Healthcare Integration</h3>
+                    <p className="text-gray-600">Seamless connection with medical systems and caregivers</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Card>

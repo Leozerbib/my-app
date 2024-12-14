@@ -1,60 +1,93 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { Brain, Eye, Heart, Thermometer, Activity, BatteryCharging } from 'lucide-react';
-import hist from '@/public/hist.jpg';
-import a from '@/public/img3.jpg';
-import b from '@/public/img2.jpg';
-import c from '@/public/img1.jpg';
-import Image from 'next/image';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { Shield, Clock, Network } from 'lucide-react';
+
+const valueData = [
+  { month: 'Jan', traditional: 40, smartvision: 80 },
+  { month: 'Feb', traditional: 45, smartvision: 85 },
+  { month: 'Mar', traditional: 42, smartvision: 88 },
+  { month: 'Apr', traditional: 48, smartvision: 90 },
+  { month: 'May', traditional: 45, smartvision: 92 },
+  { month: 'Jun', traditional: 47, smartvision: 95 },
+];
 
 const Slide5 = () => {
   return (
     <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full w-full">
-          <h2 className="text-6xl font-bold text-blue-800">The Evolution of Smart Glasses</h2>
-          <h3 className="text-4xl font-semibold text-blue-600">"Technological Motivation"</h3>
+        <div className="space-y-4 h-full">
+          <h2 className="text-6xl font-bold text-blue-800">Value Proposition</h2>
           
-          <div className="flex flex-wrap h-[80%] text-2xl ">
-            <div className="p-4 w-1/2 bg-blue-50 rounded-lg hover:bg-blue-100">
-              <h4 className="font-semibold flex items-center gap-2">
-                <Brain className="w-5 h-5" />
-                Technological Advances
-              </h4>
-              <ul className="list-disc ml-4 space-y-2">
-                <li>Embedded Artificial Intelligence</li>
-                <li>Intuitive Augmented Reality</li>
-                <li>IoT and Advanced Connectivity</li>
-              </ul>
-            </div>
-            <div className='w-1/2 h-1/3 p-2'>
-                <Image src={a} alt="Tech Image 1" className="h-full object-contain rounded-md" />
+          <div className="grid grid-cols-2 gap-8 h-[80%]">
+            {/* Left side: Benefits */}
+            <div className="space-y-6">
+              <div className="bg-blue-50 rounded-lg p-6 hover:bg-blue-100 transition-colors">
+                <div className="flex items-center gap-4 mb-4">
+                  <Shield className="w-12 h-12 text-blue-600" />
+                  <h3 className="text-2xl font-semibold">Enhanced Autonomy</h3>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Independent living support</li>
+                  <li>• Fall prevention system</li>
+                  <li>• Medication management</li>
+                </ul>
+              </div>
+
+              <div className="bg-green-50 rounded-lg p-6 hover:bg-green-100 transition-colors">
+                <div className="flex items-center gap-4 mb-4">
+                  <Clock className="w-12 h-12 text-green-600" />
+                  <h3 className="text-2xl font-semibold">Real-time Monitoring</h3>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• 24/7 health tracking</li>
+                  <li>• Instant alerts system</li>
+                  <li>• Predictive health analysis</li>
+                </ul>
+              </div>
+
+              <div className="bg-purple-50 rounded-lg p-6 hover:bg-purple-100 transition-colors">
+                <div className="flex items-center gap-4 mb-4">
+                  <Network className="w-12 h-12 text-purple-600" />
+                  <h3 className="text-2xl font-semibold">Connected Care</h3>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Family connection</li>
+                  <li>• Healthcare integration</li>
+                  <li>• Emergency response</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="p-4 w-1/2 bg-green-50  hover:bg-green-100 rounded-lg">
-              <h4 className="font-semibold">Political Support</h4>
-              <ul className="list-disc ml-4 space-y-2">
-                <li>National senior-tech plans</li>
-                <li>Innovation grants</li>
-                <li>Digital health reforms</li>
-              </ul>
-            </div>
-
-            <div className='w-1/2 h-1/3 p-2'>
-                <Image src={b} alt="Tech Image 2" className='h-full object-contain rounded-md' />
-            </div>
-
-            <div className="p-4 w-1/2  hover:bg-purple-100 bg-purple-50 rounded-lg">
-              <h4 className="font-semibold">Sector Growth</h4>
-              <ul className="list-disc ml-4 space-y-2">
-                <li>Rapidly expanding market</li>
-                <li>Growing demand</li>
-                <li>Continuous innovations</li>
-              </ul>
-            </div>
-
-            <div className='w-1/2 h-1/3 p-2'>
-                <Image src={c} alt="Tech Image 3" className="h-full w-full object-contain rounded-md" />
+            {/* Right side: Value comparison chart */}
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h3 className="text-2xl font-semibold mb-4 text-center">Care Quality Improvement</h3>
+              <div className="w-full h-[calc(100%-2rem)]">
+                <LineChart
+                  width={500}
+                  height={300}
+                  data={valueData}
+                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="month" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Line
+                    type="monotone"
+                    dataKey="traditional"
+                    stroke="#9CA3AF"
+                    name="Traditional Care"
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="smartvision"
+                    stroke="#3B82F6"
+                    name="SmartVision Care"
+                  />
+                </LineChart>
+              </div>
             </div>
           </div>
         </div>

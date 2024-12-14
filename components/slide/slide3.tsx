@@ -1,59 +1,70 @@
 import React from 'react';
-import Image from 'next/image';
 import { Card } from '@/components/ui/card';
-import { Clock, Users, Brain, Check, LightbulbIcon, AlertTriangle, Hourglass } from 'lucide-react';
-import logo from '@/public/logo.jpg';
+import { Heart, Ban, Hospital, Users, AlertCircle } from 'lucide-react';
 
 const Slide3 = () => {
   return (
     <div className="h-full w-full">
-      {/* Slide 3 */}
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full w-full">
-          <h2 className="text-6xl font-bold text-blue-800">Why Smart Vision?</h2>
-          <div className='h-[80%] w-full flex'>
-            <div className="h-full w-1/2">
-                <div className="absolute w-1 bg-blue-200 h-[80%] left-4"></div>
-                <div className="space-y-6 ml-12 flex h-full flex-col w-full">
-                <div className="relative h-1/3 w-full">
-                    <div className="absolute w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
-                    <Clock className="w-12 h-12 text-white" />
-                    </div>
-                    <div className='flex-col flex text-3xl pt-16 justify-center w-full h-full'>
-                    <h3 className="font-semibold">1950-1980</h3>
-                    <p>First electronic hearing aids</p>
-                    <p>Beginning of technological assistance for seniors</p>
-                    </div>
-                </div>
-                
-                <div className="relative h-1/3 w-full">
-                    <div className="absolute w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
-                    <Users className="w-12 h-12 text-white" />
-                    </div>
-                    <div className='flex-col flex text-3xl pt-16 justify-center w-full h-full'>
-                    <h3 className="font-semibold">1980-2010</h3>
-                    <p>Emergence of remote monitoring devices</p>
-                    <p>Development of alert systems</p>
-                    </div>
-                </div>
-                
-                <div className="relative h-1/3 w-full">
-                    <div className="absolute w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
-                    <Brain className="w-12 h-12 text-white" />
-                    </div>
-                    <div className='flex-col flex text-3xl pt-16 justify-center w-full h-full'>
-                    <h3 className="font-semibold">2010-2023</h3>
-                    <p>Connected objects revolution</p>
-                    <p>Artificial intelligence and augmented reality</p>
-                    </div>
-                </div>
-                </div>
+        <div className="space-y-4 h-full">
+          <h2 className="text-6xl font-bold text-blue-800">Key Pain Points</h2>
+          
+          <div className="grid grid-cols-3 gap-6 h-[80%] text-2xl">
+            <div className="p-4 bg-red-50 hover:bg-red-100 rounded-lg flex flex-col justify-center space-y-4">
+              <div className="flex items-center gap-2">
+                <Ban className="w-12 h-12 text-red-600" />
+                <h3 className="font-semibold text-3xl">Loss of Autonomy</h3>
+              </div>
+              <p className="text-gray-700">
+                Reduced ability to perform daily activities independently, leading to decreased quality of life
+              </p>
             </div>
-            <div className="h-full flex justify-center items-center w-1/2 relative">
-                <Image src={logo} alt="Logo" className="rounded-full" />
+            
+            <div className="p-4 bg-orange-50 hover:bg-orange-100 rounded-lg flex flex-col justify-center space-y-4">
+              <div className="flex items-center gap-2">
+                <AlertCircle className="w-12 h-12 text-orange-600" />
+                <h3 className="font-semibold text-3xl">Risk of Accidents</h3>
+              </div>
+              <p className="text-gray-700">
+                Increased vulnerability to falls and accidents, requiring constant monitoring
+              </p>
             </div>
+            
+            <div className="p-4 bg-blue-50 hover:bg-blue-100 rounded-lg flex flex-col justify-center space-y-4">
+              <div className="flex items-center gap-2">
+                <Heart className="w-12 h-12 text-blue-600" />
+                <h3 className="font-semibold text-3xl">Medical Monitoring</h3>
+              </div>
+              <p className="text-gray-700">
+                Complex health monitoring needs requiring frequent medical appointments
+              </p>
+            </div>
+            
+            <div className="col-span-2 p-4 bg-purple-50 hover:bg-purple-100 rounded-lg flex items-center">
+              <div className="flex items-center gap-2">
+                <Users className="w-12 h-12 text-purple-600" />
+                <div>
+                  <h3 className="font-semibold text-3xl">Social Isolation</h3>
+                  <p className="text-gray-700">
+                    Reduced social interactions and increased feelings of loneliness among elderly
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4 bg-green-50 hover:bg-green-100 rounded-lg flex items-center">
+              <div className="flex items-center gap-2">
+                <Hospital className="w-12 h-12 text-green-600" />
+                <div>
+                  <h3 className="font-semibold text-3xl">Healthcare Strain</h3>
+                  <p className="text-gray-700">
+                    Overwhelmed healthcare systems struggling to provide adequate care
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
       </Card>
     </div>
   );
