@@ -23,8 +23,8 @@ const Slide4 = () => {
             </div>
 
             {/* Right side: Key features */}
-            <div className="space-y-4">
-              <div className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition-colors">
+            <div className="space-y-4 h-full flex-grow flex flex-col items-center justify-center">
+              <div className="bg-purple-50 grow w-full rounded-lg p-4 hover:bg-purple-100 transition-colors">
                 <div className="flex items-start gap-4">
                   <Brain className="w-12 h-12 text-purple-600 mt-1" />
                   <div>
@@ -34,7 +34,7 @@ const Slide4 = () => {
                 </div>
               </div>
 
-              <div className="bg-green-50 rounded-lg p-4 hover:bg-green-100 transition-colors">
+              <div className="bg-green-50 grow w-full rounded-lg p-4 hover:bg-green-100 transition-colors">
                 <div className="flex items-start gap-4">
                   <Eye className="w-12 h-12 text-green-600 mt-1" />
                   <div>
@@ -44,7 +44,7 @@ const Slide4 = () => {
                 </div>
               </div>
 
-              <div className="bg-orange-50 rounded-lg p-4 hover:bg-orange-100 transition-colors">
+              <div className="bg-orange-50 grow w-full rounded-lg p-4 hover:bg-orange-100 transition-colors">
                 <div className="flex items-start gap-4">
                   <Workflow className="w-12 h-12 text-orange-600 mt-1" />
                   <div>

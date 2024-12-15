@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import { Shield, Clock, Network } from 'lucide-react';
+import { Shield, Clock, Network, Fullscreen } from 'lucide-react';
 
 const valueData = [
   { month: 'Jan', traditional: 40, smartvision: 80 },
@@ -19,7 +19,7 @@ const Slide5 = () => {
         <div className="space-y-4 h-full">
           <h2 className="text-6xl font-bold text-blue-800">Value Proposition</h2>
           
-          <div className="grid grid-cols-2 gap-8 h-[80%]">
+          <div className="grid grid-cols-3 gap-8 h-[80%]">
             {/* Left side: Benefits */}
             <div className="space-y-6">
               <div className="bg-blue-50 rounded-lg p-6 hover:bg-blue-100 transition-colors">
@@ -60,11 +60,11 @@ const Slide5 = () => {
             </div>
 
             {/* Right side: Value comparison chart */}
-            <div className="bg-gray-50 rounded-lg p-4">
+            <div className="bg-gray-50 col-span-2 rounded-lg p-4">
               <h3 className="text-2xl font-semibold mb-4 text-center">Care Quality Improvement</h3>
               <div className="w-full h-[calc(100%-2rem)]">
                 <LineChart
-                  width={500}
+                  width={600}
                   height={300}
                   data={valueData}
                   margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
