@@ -17,7 +17,7 @@ const Slide11 = () => {
   return (
     <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full">
+        <div className="space-y-4 h-[80%]">
           <h2 className="text-6xl font-bold text-blue-800">Healthcare Integration</h2>
           
           <div className="grid grid-cols-2 gap-6 h-full">

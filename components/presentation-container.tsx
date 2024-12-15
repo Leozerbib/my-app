@@ -20,6 +20,9 @@ import Slide15 from './slide/slide15';
 import Slide16 from './slide/slide16';
 import Slide17 from './slide/slide17';
 import ThankYouSlide from './slide/slide18';
+import AIARSlide from './slide/slideARAI';
+import AIARDemoSlide from './slide/slideARAIdemo';
+import IntroSlide from './slide/slide0';
 
 const PresentationContainer = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,6 +33,7 @@ const PresentationContainer = () => {
   }, []);
 
   const allSlides = [
+    <IntroSlide key="0" />,
     <Slide1 key="1" />,
     <Slide2 key="2" />,
     <Slide3 key="3" />,
@@ -37,17 +41,19 @@ const PresentationContainer = () => {
     <Slide5 key="5" />,
     <Slide6 key="6" />,
     <Slide7 key="7" />,
-    <Slide8 key="8" />,
-    <Slide9 key="9" />,
-    <Slide10 key="10" />,
-    <Slide11 key="11" />,
-    <Slide12 key="12" />,
-    <Slide13 key="13" />,
-    <Slide14 key="14" />,
-    <Slide15 key="15" />,
-    <Slide16 key="16" />,
-    <Slide17 key="17" />,
-    <ThankYouSlide key="18" />
+    <AIARSlide key="8" />,
+    <AIARDemoSlide key="9" />,
+    <Slide8 key="10" />,
+    <Slide9 key="11" />,
+    <Slide10 key="12" />,
+    <Slide11 key="13" />,
+    <Slide12 key="14" />,
+    <Slide13 key="15" />,
+    <Slide14 key="16" />,
+    <Slide15 key="17" />,
+    <Slide16 key="18" />,
+    <Slide17 key="19" />,
+    <ThankYouSlide key="20" />
   ];
 
   const handleNext = () => {
