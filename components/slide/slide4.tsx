@@ -28,8 +28,8 @@ const Slide4 = () => {
                 <div className="flex items-start gap-4">
                   <Brain className="w-12 h-12 text-purple-600 mt-1" />
                   <div>
-                    <h3 className="text-2xl font-semibold mb-2">AI-Powered Monitoring</h3>
-                    <p className="text-gray-600">Real-time health tracking and predictive analysis for proactive care</p>
+                    <h3 className="text-4xl font-semibold mb-2">AI-Powered Monitoring</h3>
+                    <p className="text-gray-600 text-2xl">Real-time health tracking and predictive analysis for proactive care</p>
                   </div>
                 </div>
               </div>
@@ -38,8 +38,8 @@ const Slide4 = () => {
                 <div className="flex items-start gap-4">
                   <Eye className="w-12 h-12 text-green-600 mt-1" />
                   <div>
-                    <h3 className="text-2xl font-semibold mb-2">Augmented Reality Interface</h3>
-                    <p className="text-gray-600">Intuitive visual assistance and medication reminders</p>
+                    <h3 className="text-4xl font-semibold mb-2">Augmented Reality Interface</h3>
+                    <p className="text-gray-600 text-2xl">Intuitive visual assistance and medication reminders</p>
                   </div>
                 </div>
               </div>
@@ -48,8 +48,8 @@ const Slide4 = () => {
                 <div className="flex items-start gap-4">
                   <Workflow className="w-12 h-12 text-orange-600 mt-1" />
                   <div>
-                    <h3 className="text-2xl font-semibold mb-2">Healthcare Integration</h3>
-                    <p className="text-gray-600">Seamless connection with medical systems and caregivers</p>
+                    <h3 className="text-4xl font-semibold mb-2">Healthcare Integration</h3>
+                    <p className="text-gray-600 text-2xl">Seamless connection with medical systems and caregivers</p>
                   </div>
                 </div>
               </div>

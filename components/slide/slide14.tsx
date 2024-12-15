@@ -22,13 +22,13 @@ const Slide14 = () => {
   return (
     <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full">
+        <div className="space-y-4 h-[80%]">
           <h2 className="text-6xl font-bold text-blue-800">Financial Projections</h2>
           
-          <div className="grid grid-cols-2 gap-6 h-[80%]">
+          <div className="grid grid-cols-3 gap-6 h-full">
             {/* Financial Performance Chart */}
-            <div className="space-y-4">
-              <div className="bg-blue-50 p-4 rounded-lg">
+            <div className="space-y-4 col-span-2 flex flex-col justify-center flex-grow">
+              <div className="bg-blue-50 p-4 rounded-lg grow">
                 <h3 className="text-2xl font-semibold flex items-center gap-2">
                   <TrendingUp className="w-8 h-8 text-blue-600" />
                   5-Year Financial Forecast (M€)
@@ -49,7 +49,7 @@ const Slide14 = () => {
                 </div>
               </div>
 
-              <div className="bg-green-50 p-4 rounded-lg">
+              <div className="bg-green-50 p-4 rounded-lg grow">
                 <h3 className="text-2xl font-semibold flex items-center gap-2">
                   <PiggyBank className="w-8 h-8 text-green-600" />
                   Initial Investment Breakdown (M€)
@@ -69,32 +69,32 @@ const Slide14 = () => {
             </div>
 
             {/* Financial Milestones */}
-            <div className="space-y-4">
-              <div className="bg-purple-50 p-4 rounded-lg">
-                <h3 className="text-2xl font-semibold">Financial Milestones</h3>
-                <ul className="mt-4 space-y-4">
+            <div className="space-y-4 flex flex-col flex-grow justify-center">
+              <div className="bg-purple-50 p-4 rounded-lg grow">
+                <h3 className="text-4xl font-semibold">Financial Milestones</h3>
+                <ul className="mt-4 space-y-4 flex items-start flex-col justify-center h-[80%]">
                   <li className="flex items-start gap-4">
                     <ArrowRight className="w-6 h-6 text-purple-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold">Break-even Point</h4>
-                      <p className="text-gray-600">Achieved in Year 2 (2025)</p>
-                      <p className="text-gray-600">Cumulative profit: €777,700</p>
+                      <h4 className="font-semibold text-2xl">Break-even Point</h4>
+                      <p className="text-gray-600  text-xl">Achieved in Year 2 (2025)</p>
+                      <p className="text-gray-600  text-xl">Cumulative profit: €777,700</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
                     <ArrowRight className="w-6 h-6 text-purple-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold">Peak Profitability</h4>
-                      <p className="text-gray-600">Year 4 (2027)</p>
-                      <p className="text-gray-600">Annual profit: €5.35M</p>
+                      <h4 className="font-semibold text-2xl">Peak Profitability</h4>
+                      <p className="text-gray-600  text-xl">Year 4 (2027)</p>
+                      <p className="text-gray-600  text-xl">Annual profit: €5.35M</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
                     <ArrowRight className="w-6 h-6 text-purple-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold">5-Year Projection</h4>
-                      <p className="text-gray-600">Total revenue: €67.32M</p>
-                      <p className="text-gray-600">Cumulative profit: €13.98M</p>
+                      <h4 className="font-semibold text-2xl">5-Year Projection</h4>
+                      <p className="text-gray-600  text-xl">Total revenue: €67.32M</p>
+                      <p className="text-gray-600  text-xl">Cumulative profit: €13.98M</p>
                     </div>
                   </li>
                 </ul>

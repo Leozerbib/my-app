@@ -21,7 +21,7 @@ const Slide7 = () => {
   return (
     <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-6 h-full">
+        <div className="space-y-6 h-[80%]">
           <div className="flex justify-between items-center">
             <h2 className="text-6xl font-bold text-blue-800">Core Features</h2>
             <div className="text-xl text-gray-600 italic">
@@ -29,7 +29,7 @@ const Slide7 = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-6 h-[80%]">
+          <div className="grid grid-cols-3 gap-6 h-full">
             {/* Left column - Main features */}
             <div className="space-y-6 flex flex-col">
               <CoreFeatureCard 
@@ -47,7 +47,7 @@ const Slide7 = () => {
             </div>
 
             {/* Center column - Feature visualization */}
-            <div className="flex items-center justify-center bg-gray-50 rounded-lg p-6">
+            <div className="flex items-center justify-center h-full bg-gray-50 rounded-lg p-6">
               {/* SVG Visualization showing features interconnection */}
               <svg className="w-full h-full" viewBox="0 0 200 300">
                 <circle cx="100" cy="150" r="60" fill="#3B82F6" fillOpacity="0.1" />
@@ -68,7 +68,7 @@ const Slide7 = () => {
             </div>
 
             {/* Right column - Additional features */}
-            <div className="space-y-6 flex flex-col">
+            <div className="space-y-6 flex flex-col h-full">
               <CoreFeatureCard 
                 icon={Pill}
                 title="Medication Management"

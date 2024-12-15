@@ -3,17 +3,30 @@
 import React from 'react';
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LineChart, Line, ComposedChart } from 'recharts';
 
-export const MarketChart = ({ data }: { data: any[] }) => (
-  <ResponsiveContainer width="100%" height={400}>
-    <ComposedChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+export const Slide5Chart = ({ data }: { data: any[] }) => (
+  <ResponsiveContainer width="100%" height='100%' className={'absolute'}>
+    <LineChart
+      data={data}
+      margin={{ top: 50, right: 30, left: 20, bottom: 50 }}
+    >
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="year" />
+      <XAxis dataKey="month" />
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="value" barSize={80} fill="#3B82F6" />
-      <Line type="monotone" dataKey="value" stroke="#ff7300" />
-    </ComposedChart>
+      <Line
+        type="monotone"
+        dataKey="traditional"
+        stroke="#9CA3AF"
+        name="Traditional Care"
+      />
+      <Line
+        type="monotone"
+        dataKey="smartvision"
+        stroke="#3B82F6"
+        name="SmartVision Care"
+      />
+    </LineChart>
   </ResponsiveContainer>
 );
 

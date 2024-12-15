@@ -22,13 +22,13 @@ const Slide12 = () => {
   return (
     <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full">
+        <div className="space-y-4 h-[80%]">
           <h2 className="text-6xl font-bold text-blue-800">Market Analysis</h2>
           
-          <div className="grid grid-cols-2 gap-6 h-[80%]">
+          <div className="grid grid-cols-2 gap-6 h-full">
             {/* Market Growth Chart */}
-            <div className="space-y-4">
-              <div className="bg-blue-50 p-4 rounded-lg">
+            <div className="space-y-4 flex flex-col justify-center flex-grow">
+              <div className="bg-blue-50 p-4 rounded-lg grow">
                 <h3 className="text-2xl font-semibold flex items-center gap-2 mb-4">
                   <TrendingUp className="w-8 h-8 text-blue-600" />
                   Market Growth Projection
@@ -45,7 +45,7 @@ const Slide12 = () => {
               </div>
 
               {/* Demographics Chart */}
-              <div className="bg-purple-50 p-4 rounded-lg">
+              <div className="bg-purple-50 p-4 rounded-lg grow">
                 <h3 className="text-2xl font-semibold flex items-center gap-2 mb-4">
                   <Users className="w-8 h-8 text-purple-600" />
                   Target Demographics
@@ -65,8 +65,8 @@ const Slide12 = () => {
             </div>
 
             {/* Market Analysis Details */}
-            <div className="space-y-4">
-              <div className="bg-green-50 p-4 rounded-lg">
+            <div className="space-y-4 flex flex-col flex-grow">
+              <div className="bg-green-50 p-4 rounded-lg grow">
                 <div className="flex items-start gap-4">
                   <Target className="w-12 h-12 text-green-600" />
                   <div>
@@ -80,7 +80,7 @@ const Slide12 = () => {
                 </div>
               </div>
 
-              <div className="bg-orange-50 p-4 rounded-lg">
+              <div className="bg-orange-50 p-4 rounded-lg grow">
                 <div className="flex items-start gap-4">
                   <Award className="w-12 h-12 text-orange-600" />
                   <div>
@@ -95,7 +95,7 @@ const Slide12 = () => {
                 </div>
               </div>
 
-              <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="bg-gray-50 p-4 rounded-lg grow">
                 <h3 className="text-2xl font-semibold mb-2">Competition Landscape</h3>
                 <div className="space-y-2">
                   <div className="flex justify-between items-center">

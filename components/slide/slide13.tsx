@@ -15,13 +15,13 @@ const Slide13 = () => {
   return (
     <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full">
+        <div className="space-y-4 h-[80%]">
           <h2 className="text-6xl font-bold text-blue-800">Business Model</h2>
           
-          <div className="grid grid-cols-2 gap-6 h-[80%]">
+          <div className="grid grid-cols-2 gap-6 h-full">
             {/* Revenue Model */}
-            <div className="space-y-4">
-              <div className="bg-blue-50 p-4 rounded-lg">
+            <div className="space-y-4 flex flex-col justify-center flex-grow">
+              <div className="bg-blue-50 p-4 rounded-lg grow">
                 <div className="flex items-start gap-4">
                   <Users className="w-12 h-12 text-blue-600" />
                   <div>
@@ -35,7 +35,7 @@ const Slide13 = () => {
                 </div>
               </div>
 
-              <div className="bg-green-50 p-4 rounded-lg">
+              <div className="bg-green-50 p-4 rounded-lg grow">
                 <div className="flex items-start gap-4">
                   <Building2 className="w-12 h-12 text-green-600" />
                   <div>
@@ -49,7 +49,7 @@ const Slide13 = () => {
                 </div>
               </div>
 
-              <div className="bg-purple-50 p-4 rounded-lg">
+              <div className="bg-purple-50 p-4 rounded-lg grow">
                 <div className="flex items-start gap-4">
                   <CreditCard className="w-12 h-12 text-purple-600" />
                   <div>
@@ -65,17 +65,17 @@ const Slide13 = () => {
             </div>
 
             {/* Revenue Distribution Chart */}
-            <div className="space-y-4">
+            <div className="space-y-4 h-full flex flex-col flex-grow justify-center">
               <h3 className="text-2xl font-semibold text-center">Revenue Distribution</h3>
-              <div className="bg-gray-50 p-4 rounded-lg h-[80%]">
+              <div className="bg-gray-50 p-4 rounded-lg h-full grow">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie
                       data={revenueDistribution}
                       cx="50%"
                       cy="50%"
-                      innerRadius={60}
-                      outerRadius={120}
+                      innerRadius={80}
+                      outerRadius={150}
                       fill="#8884d8"
                       paddingAngle={5}
                       dataKey="value"

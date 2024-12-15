@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { Shield, Clock, Network, Fullscreen } from 'lucide-react';
+import { Slide5Chart } from '../graph';
 
 const valueData = [
   { month: 'Jan', traditional: 40, smartvision: 80 },
@@ -60,33 +61,10 @@ const Slide5 = () => {
             </div>
 
             {/* Right side: Value comparison chart */}
-            <div className="bg-gray-50 col-span-2 rounded-lg p-4">
+            <div className="bg-gray-50 h-full col-span-2 rounded-lg p-4">
               <h3 className="text-2xl font-semibold mb-4 text-center">Care Quality Improvement</h3>
-              <div className="w-full h-[calc(100%-2rem)]">
-                <LineChart
-                  width={600}
-                  height={300}
-                  data={valueData}
-                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="month" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  <Line
-                    type="monotone"
-                    dataKey="traditional"
-                    stroke="#9CA3AF"
-                    name="Traditional Care"
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="smartvision"
-                    stroke="#3B82F6"
-                    name="SmartVision Care"
-                  />
-                </LineChart>
+              <div className="w-full h-full flex relative">
+                <Slide5Chart data={valueData} />
               </div>
             </div>
           </div>

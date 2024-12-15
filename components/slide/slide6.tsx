@@ -6,12 +6,12 @@ const Slide6 = () => {
   return (
     <div className="h-full w-full">
       <Card className="p-6 bg-white shadow-lg">
-        <div className="space-y-4 h-full">
+        <div className="space-y-4 h-[80%]">
           <h2 className="text-6xl font-bold text-blue-800">Technical Innovation</h2>
           
-          <div className="grid grid-cols-3 gap-6 h-[80%]">
+          <div className="grid grid-cols-3 gap-6 h-full">
             {/* Main Technical Features */}
-            <div className="col-span-2 grid grid-cols-2 gap-4 h-[80%]">
+            <div className="col-span-2 grid grid-cols-2 gap-4">
               <div className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
                 <Cpu className="w-12 h-12 text-blue-600 mb-4" />
                 <h3 className="text-2xl font-semibold mb-2">Embedded Sensors</h3>
@@ -58,9 +58,9 @@ const Slide6 = () => {
             </div>
 
             {/* Technical Diagram */}
-            <div className="bg-gray-50 h-[80%] p-4 rounded-lg">
+            <div className="bg-gray-50 h-full p-4 rounded-lg flex items-center justify-center"> 
               {/* Add SVG Technical Diagram Here */}
-              <svg className="w-full items-center" viewBox="0 0 300 600">
+              <svg className="w-full flex items-center justify-center h-full align-middle" >
                 <circle cx="100" cy="50" r="40" fill="#3B82F6" opacity="0.2"/>
                 <circle cx="100" cy="50" r="30" fill="#3B82F6" opacity="0.4"/>
                 <circle cx="100" cy="50" r="20" fill="#3B82F6"/>
@@ -80,8 +80,8 @@ const Slide6 = () => {
                 {/* Add text labels */}
                 <text x="160" y="50" className="text-sm">Sensors</text>
                 <text x="160" y="170" className="text-sm">Processing</text>
-                <text x="160" y="270" className="text-sm">AR Display</text>
                 <text x="160" y="350" className="text-sm">AI Core</text>
+                <text x="160" y="270" className="text-sm">AR Display</text>
               </svg>
             </div>
           </div>
